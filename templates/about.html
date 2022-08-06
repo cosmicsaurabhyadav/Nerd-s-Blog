@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include "header.html" %}
+
+</head>
+<body>
+    {% include "navigation.html" %}
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/about-bg.jpg') }}')">
+        <div class="overlay"></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+                <h1> About Nerd  </h1>
+                <span class="subheading">What I do...</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+        <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <p>HELLO & WELCOME to Nerd's Blog website, the latest up-to-date technologies information provider .</p>
+            <p>Our main goal is to provide all the relevant information about the latest technologies in a very Comprehensive manner with cutting edge resources to deeply analyze if someone wants to</p>
+            <p>BOOKMARK US & STAY TUNED ... </p>
+            <P>You can also subscribe to our newsletter accordimg to your convenience i.e; Daily or weekly or monthly at absolute cost of 0.00₹/$/€</P>
+        </div>
+        </div>
+    </div>
+    <hr>
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>
