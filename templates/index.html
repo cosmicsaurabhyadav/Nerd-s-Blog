@@ -4,9 +4,8 @@
 </head>
 
     <body>
-        <!-- Page Header-->
+        
         {% include 'navigation.html' %}
-        <!-- <header class="masthead" style="background-image: url_for('static', filename='img/home-bg.jpg')"> -->
         <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
             <div class="overlay"></div>
             <div class="container">
@@ -27,7 +26,6 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
 
-                    <!-- btomis1 -->
                     {% for post in posts: %}
           <div class="post-preview">
             <a href="{{ url_for('get_post', blog_id=post['id']) }}">
@@ -40,8 +38,6 @@
           </div>
           <hr>
         {% endfor %}
-                    <!-- btomis1 end -->
-                    <!-- Post preview-->
                     <div class="post-preview">
                         <a href="post.html">
                             <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
@@ -53,9 +49,7 @@
                             on September 24, 2022
                         </p>
                     </div>
-                    <!-- Divider-->
                     <hr class="my-4" />
-                    <!-- Post preview-->
                     <div class="post-preview">
                         <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
                         <p class="post-meta">
